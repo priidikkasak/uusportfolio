@@ -179,9 +179,20 @@ export default function ProjectModal({ project, onClose }: Props) {
 
                   {/* Description */}
                   <div className="space-y-3">
-                    {project.description.split("\n\n").map((para, i) => (
-                      <p key={i} className="text-[13px] text-[#666666] leading-[1.8]">{para}</p>
-                    ))}
+                    {project.description.split("\n\n").map((para, i) => {
+                      const colonIdx = para.indexOf(":");
+                      const hasLabel = colonIdx > 0 && colonIdx < 12;
+                      return (
+                        <p key={i} className="text-[13px] text-[#666666] leading-[1.8]">
+                          {hasLabel ? (
+                            <>
+                              <span className="text-[#cccccc] font-semibold">{para.slice(0, colonIdx + 1)}</span>
+                              {para.slice(colonIdx + 1)}
+                            </>
+                          ) : para}
+                        </p>
+                      );
+                    })}
                   </div>
 
                   {/* Role */}
