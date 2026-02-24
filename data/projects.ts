@@ -72,12 +72,8 @@ export const projects: Project[] = [
     tag: "Live",
     oneLiner: "The premium casino discovery platform players trust.",
     description:
-      "Mission: To connect players with the best verified casino bonuses through a transparent, trusted, and high-performance platform.\n\nVision: To become the leading premium casino discovery platform where players rely on NoRisk to find the most valuable and exclusive offers.",
-    myRole: [
-      "Build and scale NoRisk by securing top partnerships",
-      "Optimize traffic and audience growth",
-      "Deliver the highest-converting offers to our audience",
-    ],
+      "Mission: To connect players with the best verified casino bonuses through a transparent, trusted, and high-performance platform.\n\nVision: To become the leading premium casino discovery platform where players rely on NoRisk to find the most valuable and exclusive offers.\n\nMy Role: To build and scale NoRisk by securing top partnerships, optimizing traffic, and delivering the highest-converting offers to our audience.",
+    myRole: [],
     highlights: [],
     link: "https://norisk.casino",
     accent: "#f5a623",
