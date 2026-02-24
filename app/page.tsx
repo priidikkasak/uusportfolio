@@ -44,7 +44,7 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <div className="relative w-full max-w-5xl mx-auto pt-14 sm:pt-16 pb-48 sm:pb-60">
+        <div className="relative w-full max-w-5xl mx-auto pt-28 sm:pt-16 pb-48 sm:pb-60">
           <motion.div
             initial="hidden"
             animate="visible"
