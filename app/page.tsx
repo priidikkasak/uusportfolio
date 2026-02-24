@@ -57,10 +57,9 @@ export default function Home() {
               className="text-[32px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-5 sm:mb-6"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
-              Operator-grade
+              Business Portfolio
               <br />
-              <span className="text-[#3a3a3a]">portfolio.</span>{" "}
-              Built to scale.
+              <span className="text-[#3a3a3a]">Built, owned, and operated.</span>
             </motion.h1>
 
             {/* Subtext */}
