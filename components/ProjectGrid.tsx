@@ -18,13 +18,13 @@ export default function ProjectGrid() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="px-0 sm:px-0 pb-20 sm:pb-32">
+    <section id="projects" className="px-5 sm:px-8 md:px-12 lg:px-20 pb-20 sm:pb-32">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-60px" }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto"
         style={{ background: "#050505" }}
       >
         {projects.map((project, i) => (
