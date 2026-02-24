@@ -18,18 +18,7 @@ export default function ProjectGrid() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="px-6 md:px-12 lg:px-20 pb-32">
-      <motion.h2
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="text-[10px] tracking-[0.28em] uppercase text-[#333333] font-medium mb-12"
-        style={{ fontFamily: "var(--font-inter)" }}
-      >
-        Selected Projects
-      </motion.h2>
-
+    <section id="projects" className="px-0 sm:px-0 pb-20 sm:pb-32">
       <motion.div
         variants={containerVariants}
         initial="hidden"

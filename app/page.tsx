@@ -44,26 +44,17 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <div className="relative w-full px-6 md:px-12 lg:px-20 py-32">
+        <div className="relative w-full px-5 sm:px-8 md:px-12 lg:px-20 py-24 sm:py-32">
           <motion.div
             initial="hidden"
             animate="visible"
             className="max-w-2xl"
           >
-            {/* Eyebrow */}
-            <motion.p
-              custom={0}
-              variants={fadeUp}
-              className="text-[10px] tracking-[0.3em] uppercase text-[#383838] mb-8 font-medium"
-            >
-              Portfolio
-            </motion.p>
-
             {/* Headline */}
             <motion.h1
               custom={0.1}
               variants={fadeUp}
-              className="text-[36px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-6"
+              className="text-[32px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-5 sm:mb-6"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
               Operator-grade
@@ -76,7 +67,7 @@ export default function Home() {
             <motion.p
               custom={0.2}
               variants={fadeUp}
-              className="text-[14px] text-[#505050] leading-[1.8] max-w-md mb-12"
+              className="text-[13px] sm:text-[14px] text-[#505050] leading-[1.8] max-w-md mb-10 sm:mb-12"
             >
               Ventures built for compounding returns — across iGaming,
               infrastructure, and high-margin digital products.
@@ -86,11 +77,11 @@ export default function Home() {
             <motion.div
               custom={0.3}
               variants={fadeUp}
-              className="flex items-center gap-4 flex-wrap"
+              className="flex items-center gap-3 flex-wrap"
             >
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2.5 px-6 py-3 text-[11px] font-semibold tracking-[0.08em] uppercase text-[#050505] bg-[#d8d8d8] hover:bg-white transition-colors outline-none focus-visible:ring-2 focus-visible:ring-[#555]"
+                className="inline-flex items-center gap-2.5 px-5 sm:px-6 py-3 text-[11px] font-semibold tracking-[0.08em] uppercase text-[#050505] bg-[#d8d8d8] hover:bg-white active:scale-[0.97] transition-all outline-none focus-visible:ring-2 focus-visible:ring-[#555]"
                 style={{ fontFamily: "var(--font-space-grotesk)" }}
               >
                 View Projects
@@ -101,7 +92,7 @@ export default function Home() {
 
               <button
                 onClick={() => setAboutOpen(true)}
-                className="inline-flex items-center gap-2 px-6 py-3 text-[11px] font-medium tracking-[0.08em] uppercase text-[#555] border border-[#1e1e1e] hover:border-[#2e2e2e] hover:text-[#888] transition-colors outline-none focus-visible:ring-1 focus-visible:ring-[#333]"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 text-[11px] font-medium tracking-[0.08em] uppercase text-[#555] border border-[#1e1e1e] hover:border-[#2e2e2e] hover:text-[#888] active:scale-[0.97] transition-all outline-none focus-visible:ring-1 focus-visible:ring-[#333]"
                 style={{ fontFamily: "var(--font-space-grotesk)" }}
               >
                 About Me
@@ -118,12 +109,12 @@ export default function Home() {
       <ProjectGrid />
 
       {/* ── Footer ── */}
-      <footer className="px-6 md:px-12 lg:px-20 py-12 border-t border-[#0e0e0e]">
+      <footer className="px-6 md:px-12 lg:px-20 py-12">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="text-[10px] text-[#2a2a2a] tracking-widest uppercase">
+          <p className="text-[10px] text-white tracking-widest uppercase">
             © {new Date().getFullYear()} {about.name}
           </p>
-          <p className="text-[10px] text-[#2a2a2a] tracking-widest uppercase">
+          <p className="text-[10px] text-white tracking-widest uppercase">
             Open to serious partnerships.
           </p>
         </div>

@@ -25,37 +25,33 @@ export interface AboutData {
   linkedin: string;
 }
 
-// -----------------------------------------------------------------
-// Replace logo paths with actual filenames in /public/logos/
-// Replace placeholder text with your real project info
-// -----------------------------------------------------------------
 export const projects: Project[] = [
   {
     id: "project-1",
-    name: "[Project Name]",           // ← replace
-    logo: "/logos/logo1.png",         // ← file in /public/logos/
+    name: "NordExit",
+    logo: "/logos/logo1.png",
     tag: "Live",
-    oneLiner: "Replace with your one-liner.",
+    oneLiner: "Strategic exit planning for Nordic founders.",
     description:
-      "Replace with a concise, confident description of this venture. What problem does it solve? What makes it defensible?",
+      "NordExit helps Nordic founders navigate M&A, investor exits, and business transitions with precision. Built around a structured methodology that maximises valuation and minimises friction at every stage of the exit process.",
     myRole: [
-      "Co-founder & operator",
+      "Founder & operator",
       "Led product strategy and go-to-market",
       "Built and managed the core team",
     ],
     highlights: [
-      "Key metric or achievement goes here",
-      "Another significant highlight",
+      "Active deal flow across the Nordics",
+      "Proprietary exit readiness framework",
     ],
-    link: "https://example.com",      // ← replace
+    link: "https://nordexit.eu",
     accent: "#ffffff",
   },
   {
     id: "project-2",
-    name: "Algatas",
+    name: "Websta",
     logo: "/logos/logo2.png",
     tag: "Live",
-    oneLiner: "High-velocity digital infrastructure for serious operators.",
+    oneLiner: "High-velocity web infrastructure for serious operators.",
     description:
       "A performance-first platform engineered for operators who move fast. Built on a foundation of reliability, precision tooling, and compounding distribution advantages.",
     myRole: [
@@ -67,17 +63,17 @@ export const projects: Project[] = [
       "Reached operational scale within the first quarter",
       "Built proprietary tooling that reduced operational overhead by 40%",
     ],
-    link: "https://example.com",      // ← replace
-    accent: "#ff6b35",
+    link: "https://websta.ai",
+    accent: "#6ee7f7",
   },
   {
     id: "project-3",
-    name: "Binckert",
+    name: "Binderr",
     logo: "/logos/logo3.png",
     tag: "Live",
     oneLiner: "Precision-built systems for institutional-grade outcomes.",
     description:
-      "An enterprise-tier platform designed around operator requirements. Binckert delivers structured workflows and data pipelines that eliminate friction at scale.",
+      "An enterprise-tier platform designed around operator requirements. Binderr delivers structured workflows and data pipelines that eliminate friction at scale.",
     myRole: [
       "Strategic partner & product advisor",
       "Defined core product positioning and market entry thesis",
@@ -87,7 +83,7 @@ export const projects: Project[] = [
       "Secured first institutional clients within 6 months of launch",
       "Platform processes high-volume structured data pipelines daily",
     ],
-    link: "https://example.com",      // ← replace
+    link: "https://binderr.com",
     accent: "#8b9cff",
   },
   {
@@ -107,7 +103,7 @@ export const projects: Project[] = [
       "Achieved profitability within first operating year",
       "Fully automated player lifecycle management system",
     ],
-    link: "https://example.com",      // ← replace
+    link: "https://norisk.casino",
     accent: "#f5a623",
   },
   {
@@ -127,12 +123,12 @@ export const projects: Project[] = [
       "Proprietary data model with no direct structural competitor",
       "Initial pilots underway with target enterprise segment",
     ],
-    link: "https://example.com",      // ← replace
+    link: "https://legatron.ai",
     accent: "#d4a843",
   },
   {
     id: "project-6",
-    name: null,   // stealth tile — intentionally empty
+    name: null,
     logo: null,
     tag: "Private",
     oneLiner: "Stealth. Active development.",
@@ -144,13 +140,9 @@ export const projects: Project[] = [
   },
 ];
 
-// -----------------------------------------------------------------
-// Replace all placeholder text with your real bio and contact info
-// Drop your photo at /public/me.jpg
-// -----------------------------------------------------------------
 export const about: AboutData = {
-  name: "[Your Name]",                // ← replace
-  photo: "/me.jpg",                   // ← drop photo at /public/me.jpg
+  name: "[Your Name]",
+  photo: "/me.jpg",
   tagline: "Founder. Operator. Builder.",
   bio: "I build companies across iGaming, infrastructure, and emerging verticals. My work is defined by a bias toward execution, strong commercial instincts, and a preference for building businesses with structural advantages. I operate across the full stack — from product conception to market entry to scale.",
   strengths: [
@@ -169,6 +161,6 @@ export const about: AboutData = {
     "Operators with deep domain expertise in legal-tech or fintech",
     "Acquirers serious about premium, revenue-generating digital assets",
   ],
-  email: "your@email.com",            // ← replace
-  linkedin: "https://linkedin.com/in/yourprofile", // ← replace
+  email: "your@email.com",
+  linkedin: "https://linkedin.com/in/yourprofile",
 };
