@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#050505]">
       {/* ── Hero ── */}
-      <section className="relative min-h-[100dvh] flex items-start sm:items-center overflow-hidden px-5 sm:px-8 md:px-12 lg:px-20">
+      <section className="relative flex items-start overflow-hidden px-5 sm:px-8 md:px-12 lg:px-20">
 
         {/* Subtle dot-grid on the right */}
         <div
@@ -44,7 +44,7 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <div className="relative w-full max-w-5xl mx-auto pt-24 pb-16 sm:py-32">
+        <div className="relative w-full max-w-5xl mx-auto pt-14 sm:pt-16 pb-10 sm:pb-12">
           <motion.div
             initial="hidden"
             animate="visible"
