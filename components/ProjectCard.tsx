@@ -28,7 +28,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
     return (
       <motion.div variants={cardVariants}>
         <div
-          className="w-full aspect-[4/3] flex flex-col items-center justify-center select-none"
+          className="w-full aspect-[3/2] flex flex-col items-center justify-center select-none"
           style={{ background: "#050505", boxShadow: "inset 0 0 0 1px #161616" }}
           aria-label="Stealth project — coming soon"
         >
@@ -47,7 +47,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
         onFocus={() => setHovered(true)}
         onBlur={() => setHovered(false)}
         aria-label={`Open details for ${project.name}`}
-        className="w-full aspect-[4/3] flex items-center justify-center p-8 sm:p-10 outline-none cursor-pointer active:scale-[0.98] transition-transform"
+        className="w-full aspect-[3/2] flex items-center justify-center p-8 sm:p-10 outline-none cursor-pointer active:scale-[0.98] transition-transform"
         style={{
           background: "#050505",
           boxShadow: hovered ? "inset 0 0 0 1px #484848" : "inset 0 0 0 1px #161616",

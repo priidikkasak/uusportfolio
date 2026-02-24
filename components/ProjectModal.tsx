@@ -105,7 +105,7 @@ export default function ProjectModal({ project, onClose }: Props) {
 
               {/* Logo hero */}
               <div
-                className="relative flex items-center justify-center px-8 py-10 sm:py-12"
+                className="relative flex items-center justify-center px-8 py-8 sm:py-10"
                 style={{
                   background: "linear-gradient(160deg, #111 0%, #0a0a0a 100%)",
                   borderBottom: "1px solid #161616",
@@ -121,13 +121,13 @@ export default function ProjectModal({ project, onClose }: Props) {
                 />
 
                 {project.logo ? (
-                  <div className="relative w-48 h-16 sm:w-56 sm:h-20">
+                  <div className="relative w-64 h-20 sm:w-80 sm:h-24">
                     <Image
                       src={project.logo}
                       alt={project.name ?? ""}
                       fill
                       className="object-contain"
-                      sizes="224px"
+                      sizes="320px"
                       quality={100}
                       priority
                     />
