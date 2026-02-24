@@ -54,23 +54,12 @@ export default function Home() {
             <motion.h1
               custom={0.1}
               variants={fadeUp}
-              className="text-[32px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-5 sm:mb-6"
+              className="text-[32px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-8 sm:mb-10"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
-              Business Portfolio
-              <br />
+              Business Portfolio{" "}
               <span className="text-[#3a3a3a]">Built, owned, and operated.</span>
             </motion.h1>
-
-            {/* Subtext */}
-            <motion.p
-              custom={0.2}
-              variants={fadeUp}
-              className="text-[13px] sm:text-[14px] text-[#505050] leading-[1.8] max-w-md mb-8 sm:mb-12"
-            >
-              Ventures built for compounding returns — across iGaming,
-              infrastructure, and high-margin digital products.
-            </motion.p>
 
             {/* CTAs */}
             <motion.div
