@@ -29,7 +29,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
       <motion.div variants={cardVariants}>
         <div
           className="w-full aspect-[3/2] flex flex-col items-center justify-center select-none"
-          style={{ background: "#050505", boxShadow: "inset 0 0 0 1px #161616" }}
+          style={{ background: "#050505", boxShadow: "inset 0 0 0 1px #444444" }}
           aria-label="Stealth project — coming soon"
         >
           <p className="text-white text-[11px] tracking-[0.25em] uppercase font-medium">More coming soon</p>
@@ -50,7 +50,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
         className="w-full aspect-[3/2] flex items-center justify-center p-5 sm:p-6 outline-none cursor-pointer active:scale-[0.98] transition-transform"
         style={{
           background: "#050505",
-          boxShadow: hovered ? "inset 0 0 0 1px #484848" : "inset 0 0 0 1px #161616",
+          boxShadow: hovered ? "inset 0 0 0 1px #888888" : "inset 0 0 0 1px #444444",
           transition: "box-shadow 0.25s ease, transform 0.15s ease",
         }}
       >
