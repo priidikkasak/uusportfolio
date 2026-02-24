@@ -86,16 +86,18 @@ export default function AboutModal({ isOpen, onClose }: Props) {
                 boxShadow: "0 32px 80px rgba(0,0,0,0.8)",
               }}
             >
-              {/* Close button */}
-              <button
-                onClick={onClose}
-                aria-label="Close"
-                className="absolute top-6 right-6 p-1.5 text-[#444] hover:text-[#888] transition-colors z-10 outline-none focus-visible:ring-1 focus-visible:ring-[#333]"
-              >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </button>
+              {/* Header with close */}
+              <div className="flex justify-end px-5 py-4 border-b border-[#111]">
+                <button
+                  onClick={onClose}
+                  aria-label="Close"
+                  className="p-1.5 text-[#444] hover:text-[#888] transition-colors outline-none focus-visible:ring-1 focus-visible:ring-[#333]"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </button>
+              </div>
 
               {/* Content layout: photo + bio */}
               <div className="flex flex-col md:flex-row">

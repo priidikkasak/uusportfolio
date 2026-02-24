@@ -26,11 +26,14 @@ export default function ProjectCard({ project, index, onClick }: Props) {
 
   if (isStealthTile) {
     return (
-      <motion.div variants={cardVariants}>
+      <motion.div
+        variants={cardVariants}
+        className="aspect-[3/2]"
+      >
         <div
-          className="w-full aspect-[3/2] flex flex-col items-center justify-center select-none"
+          className="w-full h-full flex flex-col items-center justify-center select-none"
           style={{ background: "#050505", boxShadow: "inset 0 0 0 1px #444444" }}
-          aria-label="Stealth project — coming soon"
+          aria-label="Stealth project - coming soon"
         >
           <p className="text-white text-[11px] tracking-[0.25em] uppercase font-medium">More coming soon</p>
         </div>
@@ -39,7 +42,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
   }
 
   return (
-    <motion.div variants={cardVariants}>
+    <motion.div variants={cardVariants} className="aspect-[3/2]">
       <button
         onClick={onClick}
         onMouseEnter={() => setHovered(true)}
@@ -47,7 +50,7 @@ export default function ProjectCard({ project, index, onClick }: Props) {
         onFocus={() => setHovered(true)}
         onBlur={() => setHovered(false)}
         aria-label={`Open details for ${project.name}`}
-        className="w-full aspect-[3/2] flex items-center justify-center p-5 sm:p-6 outline-none cursor-pointer active:scale-[0.98] transition-transform"
+        className="w-full h-full flex items-center justify-center p-5 sm:p-6 outline-none cursor-pointer active:scale-[0.98] transition-transform"
         style={{
           background: "#050505",
           boxShadow: hovered ? "inset 0 0 0 1px #888888" : "inset 0 0 0 1px #444444",
