@@ -24,7 +24,7 @@ export default function ProjectGrid() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="text-[11px] tracking-[0.25em] uppercase text-[#444444] font-medium mb-12"
+        className="text-[10px] tracking-[0.28em] uppercase text-[#333333] font-medium mb-12"
         style={{ fontFamily: "var(--font-inter)" }}
       >
         Selected Projects
@@ -35,19 +35,18 @@ export default function ProjectGrid() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-60px" }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#111111]"
-        style={{ border: "1px solid #111111" }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        style={{ background: "#050505" }}
       >
         {projects.map((project, i) => (
-          <div key={project.id} className="bg-[#050505]">
-            <ProjectCard
-              project={project}
-              index={i}
-              onClick={() => {
-                if (project.name !== null) setSelected(project);
-              }}
-            />
-          </div>
+          <ProjectCard
+            key={project.id}
+            project={project}
+            index={i}
+            onClick={() => {
+              if (project.name !== null) setSelected(project);
+            }}
+          />
         ))}
       </motion.div>
 
