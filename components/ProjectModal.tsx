@@ -178,9 +178,11 @@ export default function ProjectModal({ project, onClose }: Props) {
                   </p>
 
                   {/* Description */}
-                  <p className="text-[13px] text-[#666666] leading-[1.8]">
-                    {project.description}
-                  </p>
+                  <div className="space-y-3">
+                    {project.description.split("\n\n").map((para, i) => (
+                      <p key={i} className="text-[13px] text-[#666666] leading-[1.8]">{para}</p>
+                    ))}
+                  </div>
 
                   {/* Role */}
                   {project.myRole.length > 0 && (

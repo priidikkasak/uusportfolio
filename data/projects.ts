@@ -91,13 +91,13 @@ export const projects: Project[] = [
     name: "NoRisk Casino",
     logo: "/logos/logo4.png",
     tag: "Live",
-    oneLiner: "Performance-oriented iGaming built for informed players.",
+    oneLiner: "The premium casino discovery platform players trust.",
     description:
-      "A regulated, performance-first iGaming platform built around responsible play, strong unit economics, and an acquisition engine that consistently outperforms market benchmarks.",
+      "Mission: To connect players with the best verified casino bonuses through a transparent, trusted, and high-performance platform.\n\nVision: To become the leading premium casino discovery platform where players rely on NoRisk to find the most valuable and exclusive offers.",
     myRole: [
-      "Founder & operational lead",
-      "Built acquisition and retention systems from the ground up",
-      "Managed licensing, compliance, and all vendor relationships",
+      "Build and scale NoRisk by securing top partnerships",
+      "Optimize traffic and audience growth",
+      "Deliver the highest-converting offers to our audience",
     ],
     highlights: [
       "Achieved profitability within first operating year",
