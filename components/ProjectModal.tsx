@@ -141,7 +141,7 @@ export default function ProjectModal({ project, onClose }: Props) {
                   </span>
                 )}
 
-                {/* Close button */}
+                {/* Close button — top right */}
                 <button
                   onClick={onClose}
                   aria-label="Close"
@@ -151,18 +151,10 @@ export default function ProjectModal({ project, onClose }: Props) {
                     <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
                 </button>
-              </div>
 
-              {/* Name + tag row */}
-              <div className="flex items-center justify-between px-6 py-3 border-b border-[#141414]">
-                <h2
-                  className="text-[15px] font-semibold text-[#e8e8e8]"
-                  style={{ fontFamily: "var(--font-space-grotesk)" }}
-                >
-                  {project.name}
-                </h2>
+                {/* Tag — bottom right of logo hero */}
                 <span
-                  className="text-[9px] px-2.5 py-1 tracking-[0.15em] uppercase font-medium rounded-sm"
+                  className="absolute bottom-4 right-4 text-[9px] px-2.5 py-1 tracking-[0.15em] uppercase font-medium rounded-sm"
                   style={{ color: tagStyle.text, background: tagStyle.bg }}
                 >
                   {project.tag}
