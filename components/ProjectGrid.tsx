@@ -18,7 +18,7 @@ export default function ProjectGrid() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="px-5 sm:px-8 md:px-12 lg:px-20 pb-12 sm:pb-16">
+    <section id="projects" className="px-5 sm:px-8 md:px-12 lg:px-20 pb-48 sm:pb-60">
       <motion.div
         variants={containerVariants}
         initial="hidden"
