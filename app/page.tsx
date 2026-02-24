@@ -54,7 +54,7 @@ export default function Home() {
             <motion.h1
               custom={0.1}
               variants={fadeUp}
-              className="text-[32px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-8 sm:mb-10"
+              className="text-[26px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.15] tracking-[-0.02em] text-[#e8e8e8] mb-8 sm:mb-10"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
               Business Portfolio
@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* ── Footer ── */}
       <footer className="px-5 sm:px-8 md:px-12 lg:px-20 py-8">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div className="max-w-5xl mx-auto flex flex-col items-start gap-1.5">
           <p className="text-[10px] text-white tracking-widest uppercase">
             © {new Date().getFullYear()} {about.name}
           </p>
