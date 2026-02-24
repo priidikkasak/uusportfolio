@@ -171,29 +171,27 @@ export default function ProjectModal({ project, onClose }: Props) {
 
               {/* Scrollable body */}
               <div className="overflow-y-auto flex-1 overscroll-contain">
-                <div className="px-6 py-4 space-y-4">
-                  {/* One-liner */}
-                  <p className="text-[13px] text-[#aaaaaa] leading-[1.75] font-medium">
-                    {project.oneLiner}
-                  </p>
-
-                  {/* Description */}
-                  <div className="space-y-3">
-                    {project.description.split("\n\n").map((para, i) => {
-                      const colonIdx = para.indexOf(":");
-                      const hasLabel = colonIdx > 0 && colonIdx < 12;
+                <div className="px-6 py-5 space-y-5">
+                  {/* Description — label-above sections */}
+                  {project.description.split("\n\n").map((para, i) => {
+                    const colonIdx = para.indexOf(":");
+                    const hasLabel = colonIdx > 0 && colonIdx < 16;
+                    if (hasLabel) {
+                      const label = para.slice(0, colonIdx).trim();
+                      const body = para.slice(colonIdx + 1).trim();
                       return (
-                        <p key={i} className="text-[13px] text-[#666666] leading-[1.8]">
-                          {hasLabel ? (
-                            <>
-                              <span className="text-[#cccccc] font-semibold">{para.slice(0, colonIdx + 1)}</span>
-                              {para.slice(colonIdx + 1)}
-                            </>
-                          ) : para}
-                        </p>
+                        <div key={i} className="space-y-1.5">
+                          <p className="text-[9px] tracking-[0.22em] uppercase text-[#444] font-medium">{label}</p>
+                          <p className="text-[13px] text-[#909090] leading-[1.75]">{body}</p>
+                        </div>
                       );
-                    })}
-                  </div>
+                    }
+                    return (
+                      <p key={i} className="text-[14px] text-[#c8c8c8] leading-[1.7] font-medium">
+                        {para}
+                      </p>
+                    );
+                  })}
 
                   {/* Role */}
                   {project.myRole.length > 0 && (
