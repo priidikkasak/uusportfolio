@@ -57,7 +57,8 @@ export default function Home() {
               className="text-[32px] sm:text-[48px] lg:text-[56px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#e8e8e8] mb-8 sm:mb-10"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
-              Business Portfolio{" "}
+              Business Portfolio
+              <br />
               <span className="text-[#3a3a3a]">Built, owned, and operated.</span>
             </motion.h1>
 
