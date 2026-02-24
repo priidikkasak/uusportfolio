@@ -89,7 +89,7 @@ export const projects: Project[] = [
     tag: "In progress",
     oneLiner: "Making laws instantly understandable and actionable.",
     description:
-      "Mission: Legatron's mission is to make laws instantly understandable and actionable for businesses and private individuals, removing friction between questions and answers.\n\nVision: Legatron's vision is to become the legal infrastructure layer every company and individual relies on to operate faster, safer, and with complete clarity across every country.\n\nMy Role (CEO): My role is to define the vision, secure capital and strategic partnerships, and lead Legatron's expansion from Estonia into a scalable international platform.",
+      "Mission: Legatron's mission is to make laws instantly understandable and actionable for businesses and private individuals, removing friction between questions and answers.\n\nVision: Legatron's vision is to become the legal infrastructure layer every company and individual relies on to operate faster, safer, and with complete clarity across every country.\n\nMy Role: My role is to define the vision, secure capital and strategic partnerships, and lead Legatron's expansion from Estonia into a scalable international platform.",
     myRole: [],
     highlights: [],
     link: "https://legatron.ai",
