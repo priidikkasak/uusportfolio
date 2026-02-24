@@ -101,7 +101,7 @@ export default function AboutModal({ isOpen, onClose }: Props) {
               <div className="flex flex-col md:flex-row">
                 {/* Photo column */}
                 <div className="md:w-52 shrink-0 p-8 md:p-8 flex md:flex-col items-start gap-5">
-                  <div className="relative shrink-0 w-20 h-20 md:w-36 md:h-36 rounded-full overflow-hidden">
+                  <div className="relative shrink-0 w-20 h-20 md:w-36 md:h-36 rounded-full overflow-hidden ring-1 ring-[#444]">
                     <Image
                       src={about.photo}
                       alt={about.name}
