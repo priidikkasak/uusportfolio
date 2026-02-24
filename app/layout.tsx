@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio — [Your Name]",
+  title: "Portfolio - Priidik Kasak",
   description: "Operator-grade portfolio. Built to scale.",
 };
 
