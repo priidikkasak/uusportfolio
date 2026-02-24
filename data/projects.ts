@@ -99,10 +99,7 @@ export const projects: Project[] = [
       "Optimize traffic and audience growth",
       "Deliver the highest-converting offers to our audience",
     ],
-    highlights: [
-      "Achieved profitability within first operating year",
-      "Fully automated player lifecycle management system",
-    ],
+    highlights: [],
     link: "https://norisk.casino",
     accent: "#f5a623",
   },

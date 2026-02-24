@@ -106,7 +106,7 @@ export default function AboutModal({ isOpen, onClose }: Props) {
                       src={about.photo}
                       alt={about.name}
                       fill
-                      className="object-cover"
+                      className="object-cover scale-110"
                       sizes="(max-width: 768px) 80px, 144px"
                       priority
                     />
