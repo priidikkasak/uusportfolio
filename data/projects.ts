@@ -114,10 +114,10 @@ export const about: AboutData = {
     "Spotting high-margin opportunities before they become obvious",
     "Building revenue systems that scale without complexity",
     "Turning ideas into operating businesses - fast",
-    "Commercial instincts sharpened across 5+ active ventures",
+    "Proven ability to close deals and build lasting partnerships",
   ],
   building: [
-    "5 active ventures across multiple high-margin industries",
+    "Multiple businesses running in parallel - each with a clear path to scale",
     "Platforms built to dominate niche markets",
     "Cross-border revenue infrastructure with long-term moats",
   ],
