@@ -105,7 +105,7 @@ export default function ProjectModal({ project, onClose }: Props) {
 
               {/* Logo hero */}
               <div
-                className="relative flex items-center justify-center px-8 py-8 sm:py-10"
+                className="relative flex items-center justify-center px-8 py-4 sm:py-5"
                 style={{
                   background: "linear-gradient(160deg, #111 0%, #0a0a0a 100%)",
                   borderBottom: "1px solid #161616",
@@ -154,7 +154,7 @@ export default function ProjectModal({ project, onClose }: Props) {
               </div>
 
               {/* Name + tag row */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-[#141414]">
+              <div className="flex items-center justify-between px-6 py-3 border-b border-[#141414]">
                 <h2
                   className="text-[15px] font-semibold text-[#e8e8e8]"
                   style={{ fontFamily: "var(--font-space-grotesk)" }}
@@ -171,7 +171,7 @@ export default function ProjectModal({ project, onClose }: Props) {
 
               {/* Scrollable body */}
               <div className="overflow-y-auto flex-1 overscroll-contain">
-                <div className="px-6 py-6 space-y-6">
+                <div className="px-6 py-4 space-y-4">
                   {/* One-liner */}
                   <p className="text-[13px] text-[#aaaaaa] leading-[1.75] font-medium">
                     {project.oneLiner}
@@ -222,7 +222,7 @@ export default function ProjectModal({ project, onClose }: Props) {
               </div>
 
               {/* Footer */}
-              <div className="flex items-center gap-3 px-6 py-5 border-t border-[#141414] bg-[#0a0a0a]">
+              <div className="flex items-center gap-3 px-6 py-4 border-t border-[#141414] bg-[#0a0a0a]">
                 {project.link && (
                   <a
                     href={project.link}

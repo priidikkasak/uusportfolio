@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#050505]">
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[100dvh] flex items-start sm:items-center overflow-hidden">
 
         {/* Subtle dot-grid on the right */}
         <div
@@ -44,7 +44,7 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <div className="relative w-full px-5 sm:px-8 md:px-12 lg:px-20 py-24 sm:py-32">
+        <div className="relative w-full max-w-5xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 pt-24 pb-16 sm:py-32">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -67,7 +67,7 @@ export default function Home() {
             <motion.p
               custom={0.2}
               variants={fadeUp}
-              className="text-[13px] sm:text-[14px] text-[#505050] leading-[1.8] max-w-md mb-10 sm:mb-12"
+              className="text-[13px] sm:text-[14px] text-[#505050] leading-[1.8] max-w-md mb-8 sm:mb-12"
             >
               Ventures built for compounding returns — across iGaming,
               infrastructure, and high-margin digital products.
@@ -100,17 +100,14 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Bottom separator */}
-        <div className="absolute bottom-0 left-6 md:left-12 lg:left-20 right-6 md:right-12 lg:right-20 h-px bg-[#111]" aria-hidden="true" />
       </section>
 
       {/* ── Projects ── */}
       <ProjectGrid />
 
       {/* ── Footer ── */}
-      <footer className="px-6 md:px-12 lg:px-20 py-12">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <footer className="px-5 sm:px-8 md:px-12 lg:px-20 py-8">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
           <p className="text-[10px] text-white tracking-widest uppercase">
             © {new Date().getFullYear()} {about.name}
           </p>
