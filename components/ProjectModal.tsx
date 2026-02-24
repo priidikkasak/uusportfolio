@@ -121,13 +121,13 @@ export default function ProjectModal({ project, onClose }: Props) {
                 />
 
                 {project.logo ? (
-                  <div className="relative w-[75%] max-w-[280px] sm:max-w-[340px] h-20 sm:h-28">
+                  <div className="relative w-[85%] h-32 sm:h-44">
                     <Image
                       src={project.logo}
                       alt={project.name ?? ""}
                       fill
                       className="object-contain"
-                      sizes="340px"
+                      sizes="(max-width: 640px) 85vw, 460px"
                       quality={100}
                       priority
                     />
