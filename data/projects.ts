@@ -46,7 +46,7 @@ export const projects: Project[] = [
     tag: "Live",
     oneLiner: "Launch a fully functional online business in seconds.",
     description:
-      "Mission: Websta enables anyone with a skill to launch a fully functional online business in seconds by eliminating all technical, financial, and time barriers.\n\nVision: Websta becomes the global infrastructure where millions of service providers build, run, and scale their businesses without developers, agencies, or complexity.\n\nMy Role (African market): I build and scale Websta's presence across Africa, making it the default platform for service providers to launch and monetize their businesses.",
+      "Mission: Websta enables anyone with a skill to launch a fully functional online business in seconds by eliminating all technical, financial, and time barriers.\n\nVision: Websta becomes the global infrastructure where millions of service providers build, run, and scale their businesses without developers, agencies, or complexity.\n\nMy Role: I build and scale Websta's presence across Africa, making it the default platform for service providers to launch and monetize their businesses.",
     myRole: [],
     highlights: [],
     link: "https://websta.ai",
