@@ -109,7 +109,7 @@ export const about: AboutData = {
   name: "Priidik Kasak",
   photo: "/me.png",
   tagline: "Founder. Operator. Builder.",
-  bio: "Serial founder building across iGaming, legal tech, and digital infrastructure. I move fast, operate lean, and build businesses with real structural advantages.",
+  bio: "Serial founder who builds, owns, and operates. I move fast, operate lean, and build businesses with real structural advantages.",
   strengths: [
     "Spotting high-margin opportunities before they become obvious",
     "Building revenue systems that scale without complexity",
@@ -117,7 +117,7 @@ export const about: AboutData = {
     "Commercial instincts sharpened across 5+ active ventures",
   ],
   building: [
-    "5 active ventures across iGaming, legal tech, and web",
+    "5 active ventures across multiple high-margin industries",
     "Platforms built to dominate niche markets",
     "Cross-border revenue infrastructure with long-term moats",
   ],
