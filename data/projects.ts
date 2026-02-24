@@ -141,7 +141,7 @@ export const projects: Project[] = [
 ];
 
 export const about: AboutData = {
-  name: "[Your Name]",
+  name: "Priidik Kasak",
   photo: "/me.jpg",
   tagline: "Founder. Operator. Builder.",
   bio: "I build companies across iGaming, infrastructure, and emerging verticals. My work is defined by a bias toward execution, strong commercial instincts, and a preference for building businesses with structural advantages. I operate across the full stack — from product conception to market entry to scale.",
@@ -161,6 +161,6 @@ export const about: AboutData = {
     "Operators with deep domain expertise in legal-tech or fintech",
     "Acquirers serious about premium, revenue-generating digital assets",
   ],
-  email: "your@email.com",
+  email: "priidik.kasak@gmail.com",
   linkedin: "https://linkedin.com/in/yourprofile",
 };
