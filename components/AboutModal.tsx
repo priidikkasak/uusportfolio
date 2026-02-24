@@ -101,30 +101,15 @@ export default function AboutModal({ isOpen, onClose }: Props) {
               <div className="flex flex-col md:flex-row">
                 {/* Photo column */}
                 <div className="md:w-52 shrink-0 p-8 md:p-8 flex md:flex-col items-start gap-5">
-                  <div
-                    className="relative shrink-0 w-20 h-20 md:w-full md:h-48 overflow-hidden"
-                    style={{ border: "1px solid #1a1a1a" }}
-                  >
+                  <div className="relative shrink-0 w-20 h-20 md:w-36 md:h-36 rounded-full overflow-hidden">
                     <Image
                       src={about.photo}
                       alt={about.name}
                       fill
-                      className="object-cover object-top"
-                      sizes="(max-width: 768px) 80px, 176px"
-                      onError={(e) => {
-                        // Hide broken image gracefully
-                        (e.target as HTMLImageElement).style.display = "none";
-                      }}
+                      className="object-cover"
+                      sizes="(max-width: 768px) 80px, 144px"
+                      priority
                     />
-                    {/* Fallback initials */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-[#111] text-[#333] text-xs tracking-widest">
-                      {about.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")
-                        .toUpperCase()
-                        .slice(0, 2)}
-                    </div>
                   </div>
                   <div className="md:mt-2">
                     <p

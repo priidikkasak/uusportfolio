@@ -142,7 +142,7 @@ export const projects: Project[] = [
 
 export const about: AboutData = {
   name: "Priidik Kasak",
-  photo: "/me.jpg",
+  photo: "/me.png",
   tagline: "Founder. Operator. Builder.",
   bio: "I build companies across iGaming, infrastructure, and emerging verticals. My work is defined by a bias toward execution, strong commercial instincts, and a preference for building businesses with structural advantages. I operate across the full stack — from product conception to market entry to scale.",
   strengths: [
