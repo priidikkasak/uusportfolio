@@ -120,7 +120,7 @@ export default function AboutModal({ isOpen, onClose }: Props) {
                     >
                       {about.name}
                     </p>
-                    <p className="text-[10px] text-[#444] tracking-widest mt-1 uppercase">
+                    <p className="text-[10px] text-[#666] tracking-widest mt-1 uppercase">
                       {about.tagline}
                     </p>
                   </div>
@@ -135,18 +135,18 @@ export default function AboutModal({ isOpen, onClose }: Props) {
                 <div className="flex-1 p-8 space-y-7 overflow-y-auto">
                   {/* Bio */}
                   <div>
-                    <p className="text-[12px] text-[#777] leading-[1.9]">{about.bio}</p>
+                    <p className="text-[13px] text-[#b0b0b0] leading-[1.8]">{about.bio}</p>
                   </div>
 
                   {/* Strengths */}
                   <div>
-                    <h3 className="text-[9px] tracking-[0.22em] uppercase text-[#333] font-medium mb-3">
+                    <h3 className="text-[9px] tracking-[0.22em] uppercase text-[#666] font-medium mb-3">
                       Strengths
                     </h3>
                     <ul className="space-y-1.5">
                       {about.strengths.map((s, i) => (
-                        <li key={i} className="flex items-start gap-3 text-[11px] text-[#606060] leading-relaxed">
-                          <span className="mt-2 shrink-0 w-0.5 h-0.5 rounded-full bg-[#333]" />
+                        <li key={i} className="flex items-start gap-3 text-[12px] text-[#909090] leading-relaxed">
+                          <span className="mt-2 shrink-0 w-0.5 h-0.5 rounded-full bg-[#666]" />
                           {s}
                         </li>
                       ))}
@@ -155,13 +155,13 @@ export default function AboutModal({ isOpen, onClose }: Props) {
 
                   {/* What I'm building */}
                   <div>
-                    <h3 className="text-[9px] tracking-[0.22em] uppercase text-[#333] font-medium mb-3">
+                    <h3 className="text-[9px] tracking-[0.22em] uppercase text-[#666] font-medium mb-3">
                       Currently Building
                     </h3>
                     <ul className="space-y-1.5">
                       {about.building.map((b, i) => (
-                        <li key={i} className="flex items-start gap-3 text-[11px] text-[#606060] leading-relaxed">
-                          <span className="mt-2 shrink-0 w-0.5 h-0.5 rounded-full bg-[#333]" />
+                        <li key={i} className="flex items-start gap-3 text-[12px] text-[#909090] leading-relaxed">
+                          <span className="mt-2 shrink-0 w-0.5 h-0.5 rounded-full bg-[#666]" />
                           {b}
                         </li>
                       ))}
@@ -170,12 +170,12 @@ export default function AboutModal({ isOpen, onClose }: Props) {
 
                   {/* Looking for */}
                   <div>
-                    <h3 className="text-[9px] tracking-[0.22em] uppercase text-[#333] font-medium mb-3">
+                    <h3 className="text-[9px] tracking-[0.22em] uppercase text-[#666] font-medium mb-3">
                       Looking For
                     </h3>
                     <ul className="space-y-1.5">
                       {about.lookingFor.map((l, i) => (
-                        <li key={i} className="flex items-start gap-3 text-[11px] text-[#606060] leading-relaxed">
+                        <li key={i} className="flex items-start gap-3 text-[12px] text-[#909090] leading-relaxed">
                           <span className="mt-2 shrink-0 w-0.5 h-0.5 rounded-full bg-[#555]" />
                           {l}
                         </li>
@@ -189,13 +189,13 @@ export default function AboutModal({ isOpen, onClose }: Props) {
               <div
                 className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-8 py-5 border-t border-[#141414]"
               >
-                <p className="text-[10px] text-[#3a3a3a] tracking-widest uppercase">
+                <p className="text-[10px] text-[#777] tracking-widest uppercase">
                   Open for partnerships and acquisitions.
                 </p>
                 <div className="flex items-center gap-5">
                   <a
                     href={`mailto:${about.email}`}
-                    className="text-[11px] text-[#555] hover:text-[#888] transition-colors outline-none focus-visible:underline"
+                    className="text-[11px] text-[#888] hover:text-white transition-colors outline-none focus-visible:underline"
                   >
                     {about.email}
                   </a>
@@ -203,7 +203,7 @@ export default function AboutModal({ isOpen, onClose }: Props) {
                     href={about.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-[11px] text-[#555] hover:text-[#888] transition-colors outline-none focus-visible:underline"
+                    className="flex items-center gap-1.5 text-[11px] text-[#888] hover:text-white transition-colors outline-none focus-visible:underline"
                   >
                     LinkedIn
                     <svg width="9" height="9" viewBox="0 0 10 10" fill="none" aria-hidden="true">
