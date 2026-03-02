@@ -62,7 +62,7 @@ export const projects: Project[] = [
     tag: "Live",
     oneLiner: "Global infrastructure for company formation and compliance.",
     description:
-      "Mission: To build trusted global infrastructure that enables businesses to access company formation, banking, and compliance services quickly and transparently on one platform.\n\nVision: To become the global standard where businesses and service providers connect and operate through a single unified Marketplace.\n\nMy Role: As Head of Baltics, my role is to build Binderr's Marketplace presence in the Baltics by onboarding service providers and growing the regional partner network. Service provider focus is the Baltics — for AML/KYC introductions, other regions are also welcome.",
+      "Mission: To build trusted global infrastructure that enables businesses to access company formation, banking, and compliance services quickly and transparently on one platform.\n\nVision: To become the global standard where businesses and service providers connect and operate through a single unified Marketplace.\n\nMy Role: As Head of Baltics, my role is to build Binderr's Marketplace presence in the Baltics by onboarding service providers and growing the regional partner network. Service provider focus is the Baltics - for AML/KYC introductions, other regions are also welcome.",
     myRole: [],
     highlights: [],
     link: "https://binderr.com",
