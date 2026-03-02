@@ -159,6 +159,16 @@ export default function ProjectModal({ project, onClose }: Props) {
                 >
                   {project.tag}
                 </span>
+
+                {/* Ownership — bottom left of logo hero */}
+                {project.ownership && (
+                  <span
+                    className="absolute bottom-4 left-4 text-[9px] px-2.5 py-1 tracking-[0.15em] uppercase font-medium rounded-sm"
+                    style={{ color: "#888888", background: "rgba(136,136,136,0.08)" }}
+                  >
+                    {project.ownership} equity
+                  </span>
+                )}
               </div>
 
               {/* Scrollable body */}

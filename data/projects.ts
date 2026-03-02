@@ -11,6 +11,7 @@ export interface Project {
   highlights: string[];
   link: string;
   accent: string;
+  ownership?: string | null;
 }
 
 export interface AboutData {
@@ -38,6 +39,7 @@ export const projects: Project[] = [
     highlights: [],
     link: "https://nordexit.eu",
     accent: "#ffffff",
+    ownership: "50%",
   },
   {
     id: "project-2",
@@ -51,6 +53,7 @@ export const projects: Project[] = [
     highlights: [],
     link: "https://websta.ai",
     accent: "#6ee7f7",
+    ownership: "0.1%",
   },
   {
     id: "project-3",
@@ -64,6 +67,7 @@ export const projects: Project[] = [
     highlights: [],
     link: "https://binderr.com",
     accent: "#8b9cff",
+    ownership: null,
   },
   {
     id: "project-4",
@@ -77,6 +81,7 @@ export const projects: Project[] = [
     highlights: [],
     link: "https://norisk.casino",
     accent: "#f5a623",
+    ownership: "25%",
   },
   {
     id: "project-5",
@@ -90,6 +95,7 @@ export const projects: Project[] = [
     highlights: [],
     link: "https://legatron.ai",
     accent: "#d4a843",
+    ownership: "30%",
   },
   {
     id: "project-6",
